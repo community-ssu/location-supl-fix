@@ -1,0 +1,13 @@
+Source: location-supl-fix
+Section: utils
+Priority: extra
+Maintainer: Pali Rohár <pali.rohar@gmail.com>
+Build-Depends: debhelper (>= 5), libhildon1-dev, libgconf2-dev
+Standards-Version: 3.9.3
+
+Package: location-supl-fix
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Fix A-GPS location supl server
+ Default location supl server is supl.nokia.com which does not working anymore
+ This package will ask user at device start up if he want to use supl.google.com
